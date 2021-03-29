@@ -26,17 +26,35 @@ https://bbs.hanlp.com/t/hanlp2-1-restful-api/53
 #### text model
 
 ```
-client := hanlp.HanLPClient(hanlp.WithAuth("The auth you applied for")) // If not, anonymity
-s, _ := client.Parse("In 2021, HanLPv2.1 delivers state-of-the-art multilingual NLP techniques to production environments.",hanlp.WithLanguage("mul"))
-fmt.Println(s)
+package main
+
+import (
+	"fmt"
+	"github.com/hankcs/gohanlp/hanlp"
+)
+
+func main() {
+    client := hanlp.HanLPClient(hanlp.WithAuth("The auth you applied for")) // If not, anonymity
+    s, _ := client.Parse("In 2021, HanLPv2.1 delivers state-of-the-art multilingual NLP techniques to production environments.",hanlp.WithLanguage("mul"))
+    fmt.Println(s)
+}
 ```
 
 #### object model
 
 ```
-client := hanlp.HanLPClient(hanlp.WithAuth("The auth you applied for")) // If not, anonymity
-resp, _ := client.ParseObj("In 2021, HanLPv2.1 delivers state-of-the-art multilingual NLP techniques to production environments.",hanlp.WithLanguage("mul"))
-fmt.Println(resp)
+package main
+
+import (
+	"fmt"
+	"github.com/hankcs/gohanlp/hanlp"
+)
+
+func main() {
+    client := hanlp.HanLPClient(hanlp.WithAuth("The auth you applied for")) // If not, anonymity
+    resp, _ := client.ParseObj("In 2021, HanLPv2.1 delivers state-of-the-art multilingual NLP techniques to production environments.",hanlp.WithLanguage("mul"))
+    fmt.Println(resp)
+}
 ```
 
 

@@ -26,17 +26,35 @@ https://bbs.hanlp.com/t/hanlp2-1-restful-api/53
 #### 文本形式
 
 ```
-client := hanlp.HanLPClient(hanlp.WithAuth("你申请到的auth")) // auth不填则匿名
-s, _ := client.Parse("2021年HanLPv2.1为生产环境带来次世代最先进的多语种NLP技术。阿婆主来到北京立方庭参观自然语义科技公司。",hanlp.WithLanguage("zh"))
-fmt.Println(s)
+package main
+
+import (
+	"fmt"
+	"github.com/hankcs/gohanlp/hanlp"
+)
+
+func main() {
+    client := hanlp.HanLPClient(hanlp.WithAuth("你申请到的auth")) // auth不填则匿名
+    s, _ := client.Parse("2021年HanLPv2.1为生产环境带来次世代最先进的多语种NLP技术。阿婆主来到北京立方庭参观自然语义科技公司。",hanlp.WithLanguage("zh"))
+    fmt.Println(s)
+}
 ```
 
 #### 对象形式
 
 ```
-client := hanlp.HanLPClient(hanlp.WithAuth("你申请到的auth")) // auth不填则匿名
-resp, _ := client.ParseObj("2021年HanLPv2.1为生产环境带来次世代最先进的多语种NLP技术。阿婆主来到北京立方庭参观自然语义科技公司。",hanlp.WithLanguage("zh"))
-fmt.Println(resp)
+package main
+
+import (
+	"fmt"
+	"github.com/hankcs/gohanlp/hanlp"
+)
+
+func main() {
+    client := hanlp.HanLPClient(hanlp.WithAuth("你申请到的auth")) // auth不填则匿名
+    resp, _ := client.ParseObj("2021年HanLPv2.1为生产环境带来次世代最先进的多语种NLP技术。阿婆主来到北京立方庭参观自然语义科技公司。",hanlp.WithLanguage("zh"))
+    fmt.Println(resp)
+}
 ```
 
 

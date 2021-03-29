@@ -14,7 +14,7 @@
 
 ### 安装
 ```
-go get -u github.com/xxjwxc/gohanlp@master
+go get -u github.com/hankcs/gohanlp@main
 
 ```
 #### 使用

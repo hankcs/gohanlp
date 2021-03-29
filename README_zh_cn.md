@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/hankcs/gohanlp.svg?branch=main)](https://travis-ci.org/hankcs/gohanlp)
+[![Build Status](https://travis-ci.com/hankcs/gohanlp.svg?branch=main)](https://travis-ci.com/hankcs/gohanlp)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hankcs/gohanlp)](https://goreportcard.com/report/github.com/hankcs/gohanlp)
 [![GoDoc](https://godoc.org/github.com/hankcs/gohanlp?status.svg)](https://godoc.org/github.com/hankcs/gohanlp)
 

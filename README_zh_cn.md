@@ -25,7 +25,7 @@ https://bbs.hanlp.com/t/hanlp2-1-restful-api/53
 
 #### 文本形式
 
-```
+```go
 package main
 
 import (
@@ -42,7 +42,7 @@ func main() {
 
 #### 对象形式
 
-```
+```go
 package main
 
 import (

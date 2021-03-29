@@ -25,7 +25,7 @@ https://bbs.hanlp.com/t/hanlp2-1-restful-api/53
 
 #### text model
 
-```
+```go
 package main
 
 import (
@@ -42,7 +42,7 @@ func main() {
 
 #### object model
 
-```
+```go
 package main
 
 import (
